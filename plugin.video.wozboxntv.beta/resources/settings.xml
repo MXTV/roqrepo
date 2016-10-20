@@ -1,0 +1,51 @@
+<settings>
+<category label="[COLOR yellow][B]Settings[/B][/COLOR]">
+	<setting id="user" type="text" label="[COLOR yellow][B]Email[/B][/COLOR]" default=""/>
+	<setting id="pass" type="text" label="[COLOR yellow][B]Password[/B][/COLOR]" default=""/>
+	<setting id="my_referral_link" type="enum" values="NTV|WOZBOX (www.wozboxtv.com)" label="[COLOR yellow][B]Referral[/B][/COLOR]" default="1" enable="false"/>
+	<setting id="streamtype" type="enum" values="HLS|RTMP" label="[COLOR yellow][B]Stream Type[/B][/COLOR]" default="0"/>
+	<setting id="tvguide" type="bool" label="[COLOR yellow][B]Enable Instant Guide[/B][/COLOR]" default="true"/>
+	<setting id="genre" type="bool" label="[COLOR yellow][B]Use Genre For Listings[/B][/COLOR]" default="true"/>
+	<setting id="SortAlphabetically" type="bool" label="[COLOR yellow][B]Sort Channels Alphabetically[/B][/COLOR]" default="false"/>
+	<setting id="NotificationTime" type="number" label="[COLOR yellow][B]Default Notification Time[/B][/COLOR]" default="3"/>
+	<setting id="LastPlayedStreamname" type="text" label="[COLOR yellow][B]Last Viewed Channel[/B][/COLOR]" default=""/>
+	<setting id="LastPlayedStreamiconimage" type="text" label="[COLOR yellow][B]Last Viewed Channel Icon[/B][/COLOR]" default=""/>
+	<setting id="LastPlayedStreamcat" type="text" label="[COLOR yellow][B]Last Viewed Channel Number[/B][/COLOR]" default=""/>
+	<setting id="Use2014Icons" type="bool" label="[COLOR yellow][B]Use 2014 Icons[/B][/COLOR]" default="true"/>
+</category>
+<category label="[COLOR red][B]Recording[/B][/COLOR]">
+	<setting id="enable_record" type="bool" label="[COLOR red][B]Enable Recording[/B][/COLOR]" default="false"/>
+	<setting id="record_path" type="folder" label="[COLOR red][B]Set Recording Path[/B][/COLOR]" default="" enable="!eq(-1,false)"/>
+	<setting id="platform" type="text" label="[COLOR red][B]Your Platform[/B][/COLOR]" default="" enable="false" />
+	<setting id="os" type="enum" values="Android Arm|Android x86|ATV1 Linux|ATV1 Stock|ATV2|IOS|Linux 32bit|Linux 64bit|Mac 32bit|Mac 64bit|Rasberry Pi|Windows|OpenELEC-TLBB|Vozbox Android" label="[COLOR red][B]Choose Your Operating System[/B][/COLOR]" default="0" enable="!eq(-3,false)" />
+	<setting id="runningon" type="text" label="[COLOR red][B]Running on[/B][/COLOR]" default="" enable="false" />
+	<setting id="LoopCount" type="text" label="[COLOR red][B]Recording Loops on Error[/B][/COLOR]" default="3" enable="!eq(-4,false)" />
+	<setting id="TimeBefore" type="text" label="[COLOR red][B]Recording Time before Schedule Start[/B][/COLOR]" default="1" enable="!eq(-5,false)" />
+	<setting id="TimeAfter" type="text" label="[COLOR red][B]Recording Time after Schedule End[/B][/COLOR]" default="15" enable="!eq(-6,false)" />
+	<setting id="StopRecording" type="text" label="[COLOR red][B]Recording status[/B][/COLOR]" default="Default No" enable="!eq(-7,false)" />
+	<setting id="NotifyOnSearch" type="bool" label="[COLOR red][B]Notify when Searching Recursive Recordings[/B][/COLOR]" default="true" enable="!eq(-8,false)" />
+	<setting id="SearchRecursiveIn" type="enum" values="Only selected channel|All Favorites|All My Channels" label="[COLOR red][B]Choose How to Search Recursive Recordings[/B][/COLOR]" default="1" enable="!eq(-9,false)" />
+	<setting id="DebugRecording" type="bool" label="[COLOR red][B]Debug Recording[/B][/COLOR]" default="false" enable="!eq(-10,false)" />
+	<setting id="RecordFromTVguide" type="bool" label="[COLOR red][B]Record from TV Guide[/B][/COLOR]" default="false" enable="!eq(-10,false)" />
+	<setting id="RecordFromTVguideDurationMinutes" type="text" label="[COLOR red][B]Record from TV Guide - Duration minutes[/B][/COLOR]" default="120" enable="!eq(-10,false)" />
+</category>
+
+<category label="[COLOR blue][B]Auto View[/B][/COLOR]">
+	<setting id="auto-view" type="bool" label="[COLOR blue][B]Enable Automatic View[/B][/COLOR]" default="true"/>
+	<setting id="main-view" type="number" label="[COLOR blue][B]Main View[/B][/COLOR]" default="503" enable="!eq(-1,false)"/>
+	<setting id="channels-view" type="number" label="[COLOR blue][B]Channels View[/B][/COLOR]" default="503" enable="!eq(-2,false)"/>
+	<setting id="tvguide-view" type="number" label="[COLOR blue][B]TV Guide View[/B][/COLOR]" default="503" enable="!eq(-3,false)"/>
+	<setting id="recordingsplanned-view" type="number" label="[COLOR blue][B]Planned Recordings View[/B][/COLOR]" default="503" enable="!eq(-4,false)"/>
+	<setting id="default-view" type="number" label="[COLOR blue][B]Default View[/B][/COLOR]" default="503" enable="!eq(-5,false)"/>
+	
+    <!-- Google Analytics --> 
+    <setting id="ga_time" type="text" label="GA Called" default="2000-01-01 00:00:00" visible="false"/>
+    <setting id="timezone" type="text" label="timezone" default="" visible="false"/>
+    <setting id="firstrun" type="text" label="First Run" default="" visible="false"/>
+    <setting id="update" type="text" label="UpDate Plugin" default="123456789" visible="false"/>
+    <setting id="delete" type="text" label="Delete PY" default="" visible="false"/>
+    <setting id="start_Padding" type="text" label="Record Start" default="" visible="false"/>
+    <setting id="end_Padding" type="text" label="Record End" default="" visible="false"/>
+</category>
+
+</settings>

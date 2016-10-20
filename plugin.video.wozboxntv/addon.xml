@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.wozboxntv" name="WOZBOX NTV" version="1.0.22" provider-name="WOZTEC">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">plugin.video.wozboxntv</summary>
+    <description lang="en">Stream all of your favourites sports, movies and tv from NTV.mx. Requires a registration and paid subscription. Without subscription you can only use Euronews. Please register at wozboxtv.com/registration[CR][CR]</description>
+    <platform>all</platform>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login" />
+</addon>
+
