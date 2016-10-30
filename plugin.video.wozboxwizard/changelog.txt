@@ -1,9 +1,0 @@
-1.4.1
-WOZBOX Karaoke
-
-1.1
-- Complete re-construction.
-
-
-1.0
-- initial version release
