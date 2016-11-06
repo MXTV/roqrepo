@@ -59,7 +59,7 @@
 
 <addon
   id="skin.wozbox"
-  version="1.0.16"
+  version="1.0.17"
   name="WOZBOX Skin"
   provider-name="WOZBOX">
   <requires>
