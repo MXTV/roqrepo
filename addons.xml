@@ -59,11 +59,11 @@
 
 <addon
   id="skin.wozbox"
-  version="1.0.0"
-  name="WOZBOX"
+  version="1.0.16"
+  name="WOZBOX Skin"
   provider-name="WOZBOX">
   <requires>
-    <import addon="xbmc.gui" version="5.9.0"/>
+    <import addon="xbmc.gui" version="5.10.0"/>
   </requires>
   <extension
     point="xbmc.gui.skin"

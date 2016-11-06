@@ -168,56 +168,8 @@
 			<animation effect="fade" time="250" condition="Window.Previous(Home)">WindowOpen</animation>
 			<animation effect="fade" time="250" condition="Window.Next(Home)">WindowClose</animation>
 			<visible>system.getbool(input.enablemouse)</visible>
-			<control type="button">
-				<description>Back push button</description>
-				<left>0</left>
-				<top>0</top>
-				<width>45</width>
-				<height>45</height>
-				<label>1036</label>
-				<font>-</font>
-				<onclick>back</onclick>
-				<texturefocus border="5">floor_buttonFO.png</texturefocus>
-				<texturenofocus border="5">floor_button.png</texturenofocus>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>50</onup>
-				<ondown>50</ondown>
-			</control>
-			<control type="image">
-				<description>Back Icon</description>
-				<left>5</left>
-				<top>5</top>
-				<width>35</width>
-				<height>35</height>
-				<aspectratio>keep</aspectratio>
-				<texture>icon_back.png</texture>
-			</control>
-			<control type="button">
-				<description>Home push button</description>
-				<left>55</left>
-				<top>0</top>
-				<width>45</width>
-				<height>45</height>
-				<label>31003</label>
-				<font>-</font>
-				<onclick>ActivateWindow(home)</onclick>
-				<texturefocus border="5">floor_buttonFO.png</texturefocus>
-				<texturenofocus border="5">floor_button.png</texturenofocus>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>50</onup>
-				<ondown>50</ondown>
-			</control>
-			<control type="image">
-				<description>Home Icon</description>
-				<left>60</left>
-				<top>5</top>
-				<width>35</width>
-				<height>35</height>
-				<aspectratio>keep</aspectratio>
-				<texture>icon_home.png</texture>
-			</control>
+			
+
 		</control>
 	</include>
 	<include name="CommonNowPlaying">

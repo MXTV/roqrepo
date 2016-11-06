@@ -6,6 +6,6 @@
 	<color name="grey3">FFf4f4f4</color>
 	<color name="black">FF000000</color>
 	<color name="blue">FF49e8c0</color>
-	<color name="selected">FFEB9E17</color>
+	<color name="selected">FF49e8c0</color>
 	<color name="invalid">FFFF0000</color>
 </colors>
