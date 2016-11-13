@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window type="dialog">
+	<allowoverlay>no</allowoverlay>
+	<defaultcontrol always="false">4000</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
+
+    <controls>
+
+        <control type="image">
+            <posx>150</posx>
+            <posy>100</posy>
+            <width>1010</width>
+            <height>510</height>
+            <texture>menu.png</texture>
+        </control>
+        <control type="image">
+            <posx>150</posx>
+            <posy>100</posy>
+            <width>1010</width>
+            <height>510</height>
+            <texture>menu.png</texture>
+        </control>
+		
+		<control type="label">
+            <description>WOZBOX TV GUIDE MENU</description>
+            <posx>423</posx>
+            <posy>120</posy>
+            <width>280</width>
+            <height>50</height>
+            <textcolor>ffffffff</textcolor>
+            <font>font13</font>
+			<align>left</align>
+            <aligny>top</aligny>
+			<label>WOZBOX TV GUIDE MENU</label>
+        </control>
+		
+		<control type="label">
+            <description>WOZBOX TV GUIDE MENU</description>
+            <posx>423</posx>
+            <posy>150</posy>
+            <width>710</width>
+            <height>400</height>
+            <textcolor>ffffffff</textcolor>
+            <font>font13</font>
+			<align>justify</align>
+            <aligny>top</aligny>
+			<wrapmultiline>true</wrapmultiline>
+			<autoscroll time="3600" delay="6000" repeat="6000">true</autoscroll>
+			<label>
+* CATCHUP - Watch the selected programme from the beginning.
+* WATCH - Watch the selected programme.
+* CHOOSE STREAM - Select and addon to view channel.
+* REMIND - Add a reminder for a selected programme.
+* CHANNELS - Change the order of channels.
+* MY MOVIES - Go to your Movies Libary.
+* MY TV SHOWS - Go to your TV Shows Libary.
+* WOZBOX ADDONS - Go to WOZBOX Addons list.</label>
+        </control>
+			
+        <control type="image" id="4100">
+            <posx>160</posx>
+            <posy>100</posy>
+            <width>240</width>
+            <height>80</height>
+            <aspectratio>keep</aspectratio>
+			<visible>true</visible>
+        </control>
+        <control type="label" id="4101">
+            <posx>160</posx>
+            <posy>100</posy>
+            <width>240</width>
+            <height>50</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font13</font>
+            <textcolor>ffffffff</textcolor>
+        </control>
+
+		<control type="button" id="4005"><!-- watch from beginning -->
+            <posx>160</posx>
+            <posy>176</posy>
+            <width>240</width>
+            <height>50</height>
+            <texturefocus>tvguide-program-grey-focus.png</texturefocus>
+            <texturenofocus>tvguide-program-grey.png</texturenofocus>
+            <onup>8002</onup>
+            <ondown>4000</ondown>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font13</font>
+            <textcolor>ffffffff</textcolor>
+            <label>Catchup</label>
+        </control>
+		
+        <control type="button" id="4000"><!-- Watch Stream -->
+            <posx>160</posx>
+            <posy>228</posy>
+            <width>240</width>
+            <height>50</height>
+            <texturefocus>menu-grey-focus.png</texturefocus>
+            <texturenofocus>menu-grey.png</texturenofocus>
+            <onup>4005</onup>
+            <ondown>4001</ondown>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font13</font>
+            <textcolor>ffffffff</textcolor>
+        </control>
+
+        <control type="button" id="4001"><!-- Choose Stream -->
+            <posx>160</posx>
+            <posy>280</posy>
+            <width>240</width>
+            <height>50</height>
+            <texturefocus>menu-grey-focus.png</texturefocus>
+            <texturenofocus>menu-grey.png</texturenofocus>
+            <onup>4000</onup>
+            <ondown>4002</ondown>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font13</font>
+            <textcolor>ffffffff</textcolor>
+            <label>$ADDON[script.wozboxtvguide 30304]</label>
+        </control>
+        <control type="label"><!-- Choose Stream Text -->
+            <posx>20</posx>
+            <posy>260</posy>
+            <width>240</width>
+            <height>200</height>
+            <font>font13</font>
+            <textcolor>ffffffff</textcolor>
+            <label>$ADDON[script.wozboxtvguide 30305]</label>
+            <wrapmultiline>true</wrapmultiline>
+			<visible>false</visible>
+        </control>
+
+        <control type="label" id="4102"><!-- Show Title -->
+            <posx>20</posx>
+            <posy>420</posy>
+            <width>240</width>
+            <height>50</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font13</font>
+            <textcolor>ffffffff</textcolor>
+			<visible>false</visible>
+        </control>
+        <control type="button" id="4002"><!-- REMINDER -->
+            <posx>160</posx>
+            <posy>332</posy>
+            <width>240</width>
+            <height>50</height>
+            <texturefocus>menu-grey-focus.png</texturefocus>
+            <texturenofocus>menu-grey.png</texturenofocus>
+            <onup>4001</onup>
+            <ondown>4003</ondown>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font13</font>
+            <textcolor>ffffffff</textcolor>
+        </control>
+        <control type="button" id="4003"><!-- CHANNELS -->
+            <posx>160</posx>
+            <posy>384</posy>
+            <width>240</width>
+            <height>50</height>
+            <texturefocus>menu-grey-focus.png</texturefocus>
+            <texturenofocus>menu-grey.png</texturenofocus>
+            <onup>4002</onup>
+            <ondown>80000</ondown>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font13</font>
+            <textcolor>ffffffff</textcolor>
+            <label>$ADDON[script.wozboxtvguide 30307]</label>
+        </control>
+
+
+		
+        <control type="button" id="80000"><!-- MY MOVIES -->
+            <posx>160</posx>
+            <posy>436</posy>
+            <width>240</width>
+            <height>50</height>
+            <texturefocus>menu-grey-focus.png</texturefocus>
+            <texturenofocus>menu-grey.png</texturenofocus>
+            <onup>4002</onup>
+            <ondown>80001</ondown>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font13</font>
+            <textcolor>ffffffff</textcolor>
+			<label>$ADDON[script.wozboxtvguide 80000]</label>
+        </control>
+
+        <control type="button" id="80001"><!-- MY TV SHOWS -->
+            <posx>160</posx>
+            <posy>488</posy>
+            <width>240</width>
+            <height>50</height>
+            <texturefocus>menu-grey-focus.png</texturefocus>
+            <texturenofocus>menu-grey.png</texturenofocus>
+            <onup>80000</onup>
+            <ondown>80002</ondown>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font13</font>
+            <textcolor>ffffffff</textcolor>
+			<label>$ADDON[script.wozboxtvguide 80001]</label>
+        </control>
+		
+		<control type="button" id="80002"><!-- VIDEO ADDONS -->
+            <posx>160</posx>
+            <posy>540</posy>
+            <width>240</width>
+            <height>50</height>
+            <texturefocus>menu-grey-focus.png</texturefocus>
+            <texturenofocus>menu-grey.png</texturenofocus>
+            <onup>80001</onup>
+            <ondown>4001</ondown>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font13</font>
+            <textcolor>ffffffff</textcolor>
+			<label>$ADDON[script.wozboxtvguide 80002]</label>
+        </control>
+        <control type="button" id="4004"><!-- QUIT -->
+            <posx>20</posx>
+            <posy>650</posy>
+            <width>240</width>
+            <height>50</height>
+            <texturefocus>menu-grey-focus.png</texturefocus>
+            <texturenofocus>menu-grey.png</texturenofocus>
+            <onup>4003</onup>
+            <ondown>4000</ondown>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font13</font>
+            <textcolor>ffffffff</textcolor>
+            <label>$ADDON[script.wozboxtvguide 30308]</label>
+			<visible>false</visible>
+        </control>
+		
+		
+
+    </controls>
+</window>
