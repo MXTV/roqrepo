@@ -71,7 +71,7 @@ msgid "Show channels from category"
 msgstr ""
 
 msgctxt "#30103"
-msgid "XMLTV file"
+msgid "Guide Listings"
 msgstr ""
 
 msgctxt "#30104"
