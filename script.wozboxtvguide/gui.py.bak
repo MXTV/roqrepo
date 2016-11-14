@@ -992,7 +992,7 @@ class TVGuide(xbmcgui.WindowXML):
 
 
 class PopupMenu(xbmcgui.WindowXMLDialog):
-    C_POPUP_PLAY = 4000
+
     C_POPUP_CHOOSE_STREAM = 4001
     C_POPUP_REMIND = 4002
     C_POPUP_CHANNELS = 4003

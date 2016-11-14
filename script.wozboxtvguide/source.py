@@ -4,7 +4,6 @@
 #      http://tommy.winther.nu
 #
 #      Modified for WOZBOX TV Guide (04/2015 onwards)
-
 #
 #  This Program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -976,7 +975,7 @@ class XMLTVSource(Source):
         meta_installed = False
 
         try:
-            xbmcaddon.Addon("plugin.video.meta")
+            xbmcaddon.Addon("plugin.video.wozboxlink")
             meta_installed = True
         except Exception:
             pass  # ignore addons that are not installed

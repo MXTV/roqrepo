@@ -4,7 +4,6 @@
 #      http://tommy.winther.nu
 #
 #      Modified for WOZBOX TV Guide (04/2015 onwards)
-
 #
 #  This Program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -25,7 +24,6 @@ import xbmcaddon
 import notification
 import xbmc
 import source
-from utils import reset_playing
 
 
 class Service(object):
@@ -49,9 +47,6 @@ class Service(object):
 
 
 if __name__ == '__main__':
-    # After a reboot the proc file should be wiped!
-    reset_playing()
-
     try:
         ADDON = xbmcaddon.Addon('script.wozboxtvguide')
         if ADDON.getSetting('autostart') == "true":

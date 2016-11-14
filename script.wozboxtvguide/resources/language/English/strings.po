@@ -151,7 +151,7 @@ msgid "XMLTV URL"
 msgstr ""
 
 msgctxt "#30123"
-msgid "Guide Listings"
+msgid "XMLTV type"
 msgstr ""
 
 msgctxt "#30124"

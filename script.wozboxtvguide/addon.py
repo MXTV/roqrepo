@@ -4,7 +4,6 @@
 #      http://tommy.winther.nu
 #
 #      Modified for WOZBOX TV Guide (04/2015 onwards)
-
 #
 #  This Program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -22,10 +21,6 @@
 #  http://www.gnu.org/copyleft/gpl.html
 #
 import gui
-from utils import reset_playing
-
-# After a restart the proc file should be wiped!
-reset_playing()
 
 try:
     w = gui.TVGuide()
