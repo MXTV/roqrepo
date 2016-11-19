@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.program.wozboxnotes" version="1.0.2"
+       name="WOZBOX Notes" provider-name="WOZTEC">
+  <requires>
+  	<import addon="xbmc.python" version="2.1.0"/>
+  	<import addon="script.module.addon.common" optional="true" />
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+  	<summary>WOZBOX NOTES</summary>
+  	<description>WOZBOX Notes system.</description>
+  	<language>en</language>
+  	<platform>all</platform>
+  	<website>http://www.wozboxtv.com</website>
+  	<source></source>
+  	<email></email>
+  </extension>
+</addon>
