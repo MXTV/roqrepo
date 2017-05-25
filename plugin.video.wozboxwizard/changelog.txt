@@ -1,3 +1,6 @@
+1.6.0
+Added Perfect Player
+
 1.5.8
 Update Buffering options for ROQ TV
 

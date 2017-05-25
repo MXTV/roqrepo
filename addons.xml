@@ -38,12 +38,11 @@
   <extension point="xbmc.service" library="service.py" start="login" />
 </addon>
 
-<addon id="plugin.video.wozboxwizard" name="WOZBOX Wizard" version="1.5.8" provider-name="WOZTEC">
+<addon id="plugin.video.wozboxwizard" name="WOZBOX Wizard" version="1.6.0" provider-name="WOZTEC">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.addon.common" />
 	<import addon="script.wozboxclean" version="1.0.0"/>
-	<import addon="script.wozboxtvguide" version="1.7.29"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video executable</provides>

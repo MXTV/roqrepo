@@ -51,6 +51,8 @@ def BUILDMENU():
 	setView('movies', 'MAIN')
 	addDir('TRAKT Pack',BASEURL+'update27.zip',5,ART+'trakt_pack.png',FANART,'')
 	setView('movies', 'MAIN')
+	addDir('Perfect Player Install',BASEURL+'update90.zip',5,ART+'perfect_player.png',FANART,'')
+	setView('movies', 'MAIN')
 	
 def MAINTENANCE():
     addDir('Default WOZBOX','url',6,ART+'default_wozbox.png',FANART,'')
