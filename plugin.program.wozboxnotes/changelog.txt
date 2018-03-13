@@ -1,7 +1,0 @@
-
-
-[B]1.0.1[/B]
-- Changed text box size.
-
-[B]1.0.0 - [U]Initial Version[/U][/B]
-...

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.roqtv" name="ROQ TV Repo" version="1.3" provider-name="ROQTV">
+	<extension point="xbmc.addon.repository" name="ROQ TV add-on repository">
+		<dir>
+		<info compressed="false">http://raw.github.com/MXTV/roqtv/master/addons.xml</info>
+		<checksum>http://raw.github.com/MXTV/roqtv/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/MXTV/roqtv/master/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>ROQ TV Addons</summary>
+		<description>Download and install addons from the ROQ TV repository.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+

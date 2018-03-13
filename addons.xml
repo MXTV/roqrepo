@@ -1,150 +1,100 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.program.wozboxnotes" version="1.0.2"
-       name="WOZBOX Notes" provider-name="WOZTEC">
-  <requires>
-  	<import addon="xbmc.python" version="2.1.0"/>
-  	<import addon="script.module.addon.common" optional="true" />
-  </requires>
-  <extension point="xbmc.python.script" library="default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup">
-  </extension>
-  <extension point="xbmc.addon.metadata">
-  	<summary>WOZBOX NOTES</summary>
-  	<description>WOZBOX Notes system.</description>
-  	<language>en</language>
-  	<platform>all</platform>
-  	<website>http://www.wozboxtv.com</website>
-  	<source></source>
-  	<email></email>
-  </extension>
-</addon>
-
-<addon id="plugin.video.wozboxntv64x" name="WOZBOX NTV 64X" version="1.0.0" provider-name="WOZTEC">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
+<addon id="plugin.video.roqhosting" version="1.0.0" name="ROQ Hosting" provider-name="ROQ Hosting">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.addon.common" optional="true"/>
+		<import addon="script.module.pytz" version="2014.2"/>
+		<import addon="script.module.dateutil" version="2.5.3"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">plugin.video.wozboxntv64x</summary>
-    <description lang="en">Stream all of your favourites sports, movies and tv from NTV.mx. Requires a registration and paid subscription. Without subscription you can only use Euronews. Please register at wozboxtv.com/registration[CR][CR]Record or display one channel at a time[CR][CR]Record your notifications from Wozbox TVguide and other TV Guides[CR][CR]Record recursively based on text search in your TV guide[CR][CR]Record from dr.dk nu, dr.dk Bonanza and FilmOn with special versions of theese addons[CR][CR]Can now be used with PVR IPTV Simple Client[CR][CR]Version Date 2016-10-19</description>
-    <disclaimer lang="en">Wozbox NTV is forked and based on NTV.mx by Mikey1234's original code </disclaimer>
-    <platform>all</platform>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="login" />
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup">
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>ROQ Hosting</summary>
+        <description>ROQ Hosting offering only the best</description>
+        <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+    </extension>
 </addon>
 
-<addon id="plugin.video.wozboxwizard" name="WOZBOX Wizard" version="1.6.0" provider-name="WOZTEC">
+<addon id="repository.roqtv" name="ROQ TV Repo" version="1.3" provider-name="ROQTV">
+	<extension point="xbmc.addon.repository" name="ROQ TV add-on repository">
+		<dir>
+		<info compressed="false">http://raw.github.com/MXTV/roqtv/master/addons.xml</info>
+		<checksum>http://raw.github.com/MXTV/roqtv/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/MXTV/roqtv/master/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>ROQ TV Addons</summary>
+		<description>Download and install addons from the ROQ TV repository.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.module.dateutil"
+       name="dateutil"
+       version="2.5.3"
+       provider-name="Gustavo Niemeyer, Tomi Pieviläinen, Yaron de Leeuw, Razzeee">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.addon.common" />
-	<import addon="script.wozboxclean" version="1.0.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">WOZBOX Wizard</summary>
-    <description lang="en">Easy Install With WOZBOX Wizard</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="script.module.futures"
-       name="futures"
-       version="2.2.0"
-       provider-name="Brian Quinlan">
-  <requires>
-    <import addon="xbmc.python" version="2.24.0"/>
-  </requires>
-  <extension point="xbmc.python.module"
-             library="lib"/>
-  <extension point="xbmc.addon.metadata">
-    <summary>A futures implementation for Python</summary>
-    <description>Backport of the concurrent.futures package from Python 3.2</description>
-    <platform>all</platform>
-    <license>BSD</license>
-    <source>https://code.google.com/p/pythonfutures/source/browse</source>
-    <website>https://code.google.com/p/pythonfutures</website>
-  </extension>
-</addon>
-
-<addon id="script.module.requests"
-       name="requests"
-       version="2.9.1"
-       provider-name="kennethreitz, beenje">
-  <requires>
-    <import addon="xbmc.python" version="2.24.0"/>
+    <import addon="script.module.six" version="1.9.0"/>
   </requires>
   <extension point="xbmc.python.module"
              library="lib" />
   <extension point="xbmc.addon.metadata">
-    <summary>Python HTTP for Humans</summary>
-    <description>Packed for KODI from https://github.com/kennethreitz/requests</description>
+    <summary>dateutil - powerful extensions to datetime</summary>
+    <description>Packed for Kodi from https://github.com/dateutil/dateutil</description>
     <platform>all</platform>
     <language></language>
-    <license>Apache2</license>
+    <license>Revised BSD License</license>
     <forum></forum>
-    <website>http://python-requests.org</website>
-    <source>https://github.com/beenje/script.module.requests</source>
-    <email>beenje AT gmail.com</email>
+    <website>https://dateutil.readthedocs.org/en/latest/</website>
+    <source>https://github.com/Razzeee/script.module.dateutil</source>
+    <email></email>
   </extension>
 </addon>
 
-<addon
-  id="skin.wozbox"
-  version="1.0.17"
-  name="WOZBOX Skin"
-  provider-name="WOZBOX">
+<addon id="script.module.pytz" name="pytz" version="2014.2" provider-name="Stuart Bishop, Paul Backhouse">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.addon.metadata">
+	    <summary lang="en">World Timezone Definitions for Python.</summary>
+	    <description lang="en">pytz brings the Olson tz database into Python. This library allows accurate and cross platform timezone calculations using Python 2.4 or higher. It also solves the issue of ambiguous times at the end of daylight saving time, which you can read more about in the Python Library Reference (datetime.tzinfo).</description>
+	    <platform>all</platform>
+	    <language></language>
+	    <license>MIT</license>
+	    <forum></forum>
+	    <website>https://pypi.python.org/pypi/pytz/</website>
+	    <source>https://github.com/powlo/script.module.pytz</source>
+	    <email></email>
+	    <disclaimer lang="en">Use at your own risk. The authors accept no liability. May cause permanent and/or catastrophic damage. Side effects include, but are not limited to loss of memory, seizures, sudden fits of rage, sudden fits of melancholy, inability to recall prominent capital cities, lack of respect for authority, fear of cats, temporary and/or permanent black outs. Avoid inhalation. Use in a well ventilated space. Keep away from small children.</disclaimer>
+	</extension>
+</addon>
+
+<addon id="script.module.six"
+       name="six"
+       version="1.11.0"
+       provider-name="gutworth">
   <requires>
-    <import addon="xbmc.gui" version="5.10.0"/>
+    <import addon="xbmc.python"
+    		version="2.14.0"/>
   </requires>
-  <extension
-    point="xbmc.gui.skin"
-    debugging="false"
-    effectslowdown="1.0">
-    <res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
-  </extension>
+  <extension point="xbmc.python.module"
+             library="lib" />
   <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">WOZBOX Skin</summary>
-
-
-    <description lang="en_GB">Default WOZBOX skin.</description>
-
+    <summary>Python 2 and 3 compatibility utilities.</summary>
+    <description>Six is a Python 2 and 3 compatibility library. It provides utility functions for smoothing over the differences between the Python versions with the goal of writing Python code that is compatible on both Python versions. See the documentation for more information on what is provided.</description>
     <platform>all</platform>
+    <license>MIT</license>
+    <source>https://pypi.python.org/pypi/six</source>
+    <website>https://pypi.python.org/pypi/six</website>
   </extension>
-</addon>
-
-<addon id="xbmc.core" version="0.1.0" provider-name="Team-Kodi">
-  <backwards-compatibility abi="0.1"/>
-  <requires>
-    <c-pluff version="0.1"/>
-  </requires>
-</addon>
-
-<addon id="xbmc.gui" version="5.10.0" provider-name="Team-Kodi">
-  <backwards-compatibility abi="5.10.0"/>
-  <requires>
-    <import addon="xbmc.core" version="0.1.0"/>
-  </requires>
-  <extension-point id="skin" schema="skin.xsd"/>
-</addon>
-
-<addon id="xbmc.python" version="2.24.0" provider-name="Team-Kodi">
-  <backwards-compatibility abi="2.1.0"/>
-  <requires>
-    <import addon="xbmc.core" version="0.1.0"/>
-  </requires>
-  <extension-point id="script" schema="script.xsd"/>
-  <extension-point id="subtitles" schema="script.xsd"/>
-  <extension-point id="lyrics" schema="script.xsd"/>
-  <extension-point id="weather" schema="script.xsd"/>
-  <extension-point id="library" schema="script.xsd"/>
-  <extension-point id="plugin" schema="pluginsource.xsd"/>
-  <extension-point id="context.item" schema="contextitem.xsd"/>
 </addon>
 </addons>
