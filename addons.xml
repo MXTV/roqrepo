@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.roqhosting" version="1.0.0" name="ROQ Hosting" provider-name="ROQ Hosting">
+<addon id="plugin.video.roqtv" version="4.0" name="ROQ TV" provider-name="ROQ TV">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.addon.common" optional="true"/>
@@ -13,9 +13,9 @@
     <extension point="xbmc.service" library="service.py" start="startup">
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>ROQ Hosting</summary>
+        <summary>ROQ TV</summary>
         <description>ROQ Hosting offering only the best</description>
-        <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<website>http://roq-tv.com</website>
         <language>en</language>
         <platform>all</platform>
     </extension>
