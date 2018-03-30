@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.roqtv" version="4.1" name="ROQ TV" provider-name="ROQ TV">
+<addon id="plugin.video.roqtv" version="4.2" name="ROQ TV" provider-name="ROQ TV">
     <requires>
-        <import addon="xbmc.python" />
+        <import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.addon.common" optional="true"/>
 		<import addon="script.module.pytz" />
 		<import addon="script.module.dateutil" />
