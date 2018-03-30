@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.roqtv" name="ROQ TV Repo" version="1.4" provider-name="ROQTV">
+<addon id="repository.roqtv" name="ROQ TV Repo" version="1.5" provider-name="ROQTV">
+  <requires>
+    <import addon="plugin.video.roqtv"/>
+  </requires>
 	<extension point="xbmc.addon.repository" name="ROQ TV add-on repository">
 		<dir>
 		<info compressed="false">http://raw.github.com/MXTV/roqrepo/master/addons.xml</info>
