@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.roqtv" name="ROQ TV" version="4.5" provider-name="MikkM">
+<addon id="plugin.video.roqtv" name="ROQ TV" version="4.6" provider-name="MikkM">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.addon.common" />
